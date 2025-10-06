@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E90A4120-AC00-4E08-B5B6-4F99AC62A0E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomeGym.Domain", "src\Domain\DomeGym.Domain.csproj", "{7515593F-5FE8-4EB4-9A0E-328FA6B0576B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BC00E5BF-0511-4281-8B48-71E008E23085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomeGym.UnitTests", "tests\UnitTests\DomeGym.UnitTests.csproj", "{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7515593F-5FE8-4EB4-9A0E-328FA6B0576B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7515593F-5FE8-4EB4-9A0E-328FA6B0576B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7515593F-5FE8-4EB4-9A0E-328FA6B0576B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7515593F-5FE8-4EB4-9A0E-328FA6B0576B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7515593F-5FE8-4EB4-9A0E-328FA6B0576B} = {E90A4120-AC00-4E08-B5B6-4F99AC62A0E7}
+		{A80E4064-A6B5-4AB9-AF3D-D26EF2F796CE} = {BC00E5BF-0511-4281-8B48-71E008E23085}
+	EndGlobalSection
+EndGlobal
