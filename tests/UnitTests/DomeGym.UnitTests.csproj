@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Domain\DomeGym.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
