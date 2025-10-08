@@ -9,9 +9,9 @@ public class SessionTests
     public void SessionReturnsErrorWhenNoRoomForParticipant()
     {
         // ARRANGE
-        var session = SessionFactory.CreateSession(maxNumberOfParticipants: 1);
-        var participant1 = ParticipantFactory.CreateParticipant(Guid.NewGuid());
-        var participant2 = ParticipantFactory.CreateParticipant(Guid.NewGuid());
+        var session = SessionFactory.Create(maxNumberOfParticipants: 1);
+        var participant1 = ParticipantFactory.Create(Guid.NewGuid());
+        var participant2 = ParticipantFactory.Create(Guid.NewGuid());
 
         // ACT
         var participant1ReserveResult = session.ReserveSpot(participant1);
@@ -30,9 +30,9 @@ public class SessionTests
         var date =  DateOnly.FromDateTime(DateTime.UtcNow);
         var startTime = TimeOnly.FromDateTime(DateTime.UtcNow.AddHours(3));
         var endTime = TimeOnly.FromDateTime(DateTime.UtcNow.AddHours(5));
-        var participant = ParticipantFactory.CreateParticipant(Guid.NewGuid());
+        var participant = ParticipantFactory.Create(Guid.NewGuid());
         
-        var session = SessionFactory.CreateSession(maxNumberOfParticipants: 2, date, startTime, endTime);
+        var session = SessionFactory.Create(maxNumberOfParticipants: 2, date, startTime, endTime);
         
         // ACT
         var reserveSpotResult = session.ReserveSpot(participant);
@@ -51,10 +51,10 @@ public class SessionTests
         var date =  DateOnly.FromDateTime(DateTime.UtcNow.AddDays(3));
         var startTime = TimeOnly.FromDateTime(DateTime.UtcNow.AddHours(3));
         var endTime = TimeOnly.FromDateTime(DateTime.UtcNow.AddHours(5));
-        var participant1 = ParticipantFactory.CreateParticipant(Guid.NewGuid());
-        var participant2 = ParticipantFactory.CreateParticipant(Guid.NewGuid());
+        var participant1 = ParticipantFactory.Create(Guid.NewGuid());
+        var participant2 = ParticipantFactory.Create(Guid.NewGuid());
         
-        var session = SessionFactory.CreateSession(maxNumberOfParticipants: 2, date, startTime, endTime);
+        var session = SessionFactory.Create(maxNumberOfParticipants: 2, date, startTime, endTime);
         
         // ACT
         var reserveSpotResult = session.ReserveSpot(participant1);

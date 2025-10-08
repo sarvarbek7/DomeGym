@@ -4,7 +4,7 @@ namespace DomeGym.UnitTests.Utils;
 
 public static class SessionFactory
 {
-    public static Session CreateSession(ushort maxNumberOfParticipants, DateOnly? date = null, TimeOnly? startTime = null,
+    public static Session Create(ushort maxNumberOfParticipants, DateOnly? date = null, TimeOnly? startTime = null,
         TimeOnly? endTime = null, Guid? id = null)
     {
         return new Session(maxNumberOfParticipants,
